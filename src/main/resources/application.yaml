@@ -1,3 +1,12 @@
 spring:
   application:
     name: file-loader-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/ussd
+    username: ${DB_USERNAME:default}
+    password: ${DB_PASSWORD:default}
+    driver-class-name: org.postgresql.Driver
+  sql:
+    init:
+      mode: always
+      schema-locations: classpath:schema.sql
