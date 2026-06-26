@@ -112,7 +112,7 @@ public class FileProcessorServiceImpl implements FileProcessorService {
         } catch (IOException e) {
             cdrLogRepository.complete(logId, Timestamp.from(Instant.now()),
                     successCount, failCount, "ERROR");
-            log.error("Could not read file {}: {}, {} ", fileName, e, e.getMessage());
+            log.error("Could not read file {}: {} ", fileName, e.getMessage(), e);
         }
     }
 
