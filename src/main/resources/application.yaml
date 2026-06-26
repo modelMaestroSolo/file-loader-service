@@ -10,3 +10,8 @@ spring:
     init:
       mode: always
       schema-locations: classpath:schema.sql
+
+app:
+  loader:
+    archive-folder: ${ARCHIVE_FOLDER:${user.dir}/archive}
+    error-folder: ${ERROR_FOLDER:${user.dir}/errors}
