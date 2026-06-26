@@ -15,3 +15,5 @@ app:
   loader:
     archive-folder: ${ARCHIVE_FOLDER:${user.dir}/archive}
     error-folder: ${ERROR_FOLDER:${user.dir}/errors}
+    watch-folder: ${WATCH_FOLDER:${user.dir}/watch}
+    poll-interval-ms: 60000
